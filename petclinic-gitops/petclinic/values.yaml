@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: jeevan11cs/spring-petclinic
-  tag: "latest"
+  tag: "6"
   pullPolicy: Always
 
 service:
