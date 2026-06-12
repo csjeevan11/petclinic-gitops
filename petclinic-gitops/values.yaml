@@ -1,0 +1,26 @@
+replicaCount: 2
+
+image:
+  repository: jeevan11cs/spring-petclinic
+  tag: "latest"
+  pullPolicy: Always
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8080
+
+ingress:
+  enabled: true
+  className: nginx
+
+  host: petclinic.local
+
+resources:
+  requests:
+    cpu: "100m"
+    memory: "256Mi"
+
+  limits:
+    cpu: "500m"
+    memory: "512Mi"
