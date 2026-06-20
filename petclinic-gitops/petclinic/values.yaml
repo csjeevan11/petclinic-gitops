@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: jeevan11cs/spring-petclinic
+  repository: 068712669296.dkr.ecr.us-east-1.amazonaws.com/petclinic/spring-petclinic
   tag: "12"
   pullPolicy: Always
 imagePullSecrets:
