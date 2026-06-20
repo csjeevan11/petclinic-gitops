@@ -4,6 +4,8 @@ image:
   repository: jeevan11cs/spring-petclinic
   tag: "12"
   pullPolicy: Always
+imagePullSecrets:
+  - name: ecr-secret
 
 service:
   type: NodePort
