@@ -4,8 +4,7 @@ image:
   repository: 068712669296.dkr.ecr.us-east-1.amazonaws.com/petclinic/spring-petclinic
   tag: "13"
   pullPolicy: Always
-imagePullSecrets:
-  - name: ecr-secret
+
 
 service:
   type: NodePort
