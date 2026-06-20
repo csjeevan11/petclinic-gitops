@@ -17,6 +17,8 @@ spec:
         app: petclinic
 
     spec:
+      imagePullSecrets:
+        {{- toYaml .Values.imagePullSecrets | nindent 8 }}
       containers:
       - name: petclinic
 
